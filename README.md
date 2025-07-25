@@ -34,8 +34,7 @@ paycommerce/
 └── frontend/
 
 yaml
-Copiar
-Editar
+
 
 ---
 
@@ -50,15 +49,13 @@ cd paycommerce
 Para o e-commerce:
 
 bash
-Copiar
-Editar
+
 cd e-commerce
 docker compose up -d
 Para a plataforma de pagamento:
 
 bash
-Copiar
-Editar
+
 cd ../pagamento-gateway
 docker compose up -d
 Nota: Certifique-se de que as portas 3307, 3308, 8080, 8081, 8084, 8088, 5173 e 5174 estejam livres.
@@ -67,8 +64,7 @@ Nota: Certifique-se de que as portas 3307, 3308, 8080, 8081, 8084, 8088, 5173 e 
 Cada backend e frontend deve ser iniciado individualmente. Exemplo:
 
 bash
-Copiar
-Editar
+
 # Em cada pasta backend (e-commerce e pagamento)
 go run main.go
 
