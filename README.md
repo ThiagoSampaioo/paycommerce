@@ -48,22 +48,22 @@ cd paycommerce
 2. Suba os serviços com Docker Compose
 Para o e-commerce:
 
-bash
 
 cd e-commerce
 docker compose up -d
+
 Para a plataforma de pagamento:
 
-bash
 
 cd ../pagamento-gateway
 docker compose up -d
+
 Nota: Certifique-se de que as portas 3307, 3308, 8080, 8081, 8084, 8088, 5173 e 5174 estejam livres.
 
 3. Inicie os backends e frontends manualmente
 Cada backend e frontend deve ser iniciado individualmente. Exemplo:
 
-bash
+
 
 # Em cada pasta backend (e-commerce e pagamento)
 go run main.go
@@ -71,6 +71,7 @@ go run main.go
 # Em cada pasta frontend
 npm install
 npm run dev
+
 👤 Usuário Administrador
 Ao iniciar o backend do e-commerce pela primeira vez, um usuário sistêmico será criado automaticamente:
 
